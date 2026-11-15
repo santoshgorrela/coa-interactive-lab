@@ -69,3 +69,23 @@
     scroll-behavior: auto !important;
   }
 }
+
+@media print {
+  @page {
+    size: letter;
+    margin: 0.55in;
+  }
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .manual-print-sheet {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+}

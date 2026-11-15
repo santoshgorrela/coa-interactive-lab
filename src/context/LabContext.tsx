@@ -1,7 +1,7 @@
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
 import { SIMULATIONS, UnitId } from '../data/syllabus';
 
-export type AppPage = 'landing' | 'dashboard' | 'unit' | 'workspace' | 'quiz' | 'progress' | 'about';
+export type AppPage = 'landing' | 'dashboard' | 'unit' | 'workspace' | 'quiz' | 'progress' | 'manual' | 'about';
 
 export interface SimHistoryEntry {
   simId: string;

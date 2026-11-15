@@ -7,6 +7,7 @@ import { UnitPage } from './pages/UnitPage';
 import { WorkspacePage } from './pages/WorkspacePage';
 import { QuizPage } from './pages/QuizPage';
 import { ProgressPage } from './pages/ProgressPage';
+import { ManualPage } from './pages/ManualPage';
 import { AboutPage } from './pages/AboutPage';
 
 const AppShell: React.FC = () => {
@@ -22,9 +23,10 @@ const AppShell: React.FC = () => {
         {page === 'workspace' && <WorkspacePage />}
         {page === 'quiz' && <QuizPage />}
         {page === 'progress' && <ProgressPage />}
+        {page === 'manual' && <ManualPage />}
         {page === 'about' && <AboutPage />}
       </main>
-      <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0F172A] py-5">
+      <footer className="no-print border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0F172A] py-5">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3 text-xs text-[#64748B] dark:text-slate-400">
           <div className="font-mono">
             COA INTERACTIVE LAB · Course Code 21CSS201T · Understand. Experiment. Visualize. Simulate.
@@ -35,6 +37,9 @@ const AppShell: React.FC = () => {
             </button>
             <button type="button" onClick={() => navigate('workspace')} className="hover:text-[#2563EB] cursor-pointer">
               Workspace
+            </button>
+            <button type="button" onClick={() => navigate('manual')} className="hover:text-[#2563EB] cursor-pointer">
+              User Manual
             </button>
             <button type="button" onClick={() => navigate('about')} className="hover:text-[#2563EB] cursor-pointer">
               About

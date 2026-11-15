@@ -51,6 +51,13 @@ export const LandingPage: React.FC = () => {
                 <PlayCircle className="h-4 w-4 text-[#2563EB] dark:text-[#22D3EE]" />
                 Explore Simulations
               </button>
+              <button
+                type="button"
+                onClick={() => navigate('manual')}
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-5 py-3 text-sm font-semibold text-[#14213D] dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+              >
+                User Manual
+              </button>
             </div>
 
             <div className="pt-2 font-mono text-xs text-[#64748B] dark:text-slate-400">

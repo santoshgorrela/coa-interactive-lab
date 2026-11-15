@@ -12,6 +12,7 @@ export const Navbar: React.FC = () => {
     { id: 'workspace', label: 'Workspace' },
     { id: 'quiz', label: 'Quiz' },
     { id: 'progress', label: 'Progress' },
+    { id: 'manual', label: 'Manual' },
     { id: 'about', label: 'About' },
   ];
 
@@ -21,7 +22,7 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200/80 dark:border-slate-800 bg-white/95 dark:bg-[#0F172A]/95 backdrop-blur-md">
+    <header className="no-print sticky top-0 z-40 border-b border-slate-200/80 dark:border-slate-800 bg-white/95 dark:bg-[#0F172A]/95 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
         {/* Zone 1: Brand Wordmark */}
         <button

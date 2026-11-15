@@ -58,6 +58,24 @@ export const AboutPage: React.FC = () => {
           ))}
         </div>
       </div>
+
+      <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-7 flex flex-wrap items-center justify-between gap-4">
+        <div className="space-y-1">
+          <h2 className="font-display text-lg font-bold text-[#14213D] dark:text-white">
+            User Manual &amp; Google Docs Export
+          </h2>
+          <p className="text-xs text-slate-600 dark:text-slate-300">
+            View the concise laboratory manual (capped at 10 pages), generate an editable Google Document, or download PDF / DOCX copies.
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={() => navigate('manual')}
+          className="inline-flex items-center gap-2 rounded-xl bg-[#2563EB] px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 transition-colors cursor-pointer shrink-0"
+        >
+          Open User Manual →
+        </button>
+      </div>
     </div>
   );
 };
